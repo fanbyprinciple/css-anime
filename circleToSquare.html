@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CircleToSquare</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+
+            font-size: 15px;
+        }
+
+        div {
+            position: absolute;
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            animation: square-to-circle 3s infinite alternate ease-in-out;
+        }
+
+        @-webkit-keyframes square-to-circle {
+            0% {
+                border-radius: 0 0 0 0;
+                background: coral;
+                -webkit-transform: scale(0.1);
+                -webkit-transform: rotate(0deg);
+                background-color: tomato;
+                
+
+
+            }
+            25% {
+                border-radius: 50% 0 0 0;
+                background: darksalmon;
+                -webkit-transform: scale(1.2);
+                -webkit-transform: rotate(45deg);
+                background-color: plum;
+                
+            }
+            50% {
+                border-radius: 50% 50% 0 0;
+                background: indianred;
+                -webkit-transform: scale(1);
+                -webkit-transform: rotate(90deg);
+                background-color: blueviolet;
+                
+            }
+            75% {
+                border-radius: 50% 50% 50% 0;
+                background: lightcoral;
+                
+                -webkit-transform: rotate(135deg);
+                background-color: turquoise;
+
+            }
+            100% {
+                border-radius: 50% 50% 50% 50%;
+                background: darksalmon;
+                -webkit-transform: scale(1.2);
+                -webkit-transform: rotate(180deg);
+
+                background-color: greenyellow;
+            }
+        }
+
+        div.ball {
+            font-family: 'Open Sans', sans-serif;
+            color: #ffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 40px;
+            font-weight: 800;
+            letter-spacing: -3px;
+            line-height: 1;
+            text-shadow: #EDEDED 3px 2px 0;
+            position: absolute;
+        }
+
+        div:hover {
+            animation-play-state: paused;
+            }
+    </style>
+</head>
+
+<body>
+            <div class="ball" style="display:flex;justify-content:center;align-items:center">
+                    Loading
+            </div>
+    
+    
+</body>
+
+</html>

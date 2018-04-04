@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Animate</title>
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+
+        div {
+            display:flex;
+            justify-content: center;
+        }
+
+        @-webkit-keyframes textIn {
+            0% {
+                -webkit-transform: scale(0.1);
+                opacity: 0;
+            }
+            60% {
+                -webkit-transform: scale(1.2);
+                opacity: 1;
+            }
+            100% {
+                -webkit-transform: scale(1);
+            }
+        }
+
+        .textIn {
+            -webkit-animation-duration: 1s;
+            -webkit-animation-name: textIn;
+            -webkit-animation-timing-function: ease -in-out;
+            font-family: "verdana";
+            font-size: 46px;
+            color: powderblue;
+        }
+
+        // bouncing ball
+
+        @-webkit-keyframes bouncingBall {
+            0 % {
+                opacity: 0;
+                -webkit-translateY: 0px; 
+            }
+            {# 5 % {
+                opacity: 1;
+            }
+            80 % {
+                -webkit-translateY: 20px;
+            }
+            90 % {
+                -webkit-translateY: 17px;
+            } #}
+            100 % {
+                -webkit-translateY: 20px;
+                opacity: 1;
+                
+            }
+        }
+
+        .bouncingBall {
+            -webkit-animation: bouncingBall 4s ease-in-out;
+            font-size: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="textIn">
+        Go the manual way
+    </div>
+    <div class="bouncingBall">
+        Hello
+    </div>
+</body>
+
+</html>
